@@ -20,7 +20,6 @@
 
 #import "JSQMessagesCollectionView.h"
 #import "JSQMessagesCollectionViewFlowLayout.h"
-#import "JSQMessagesInputToolbar.h"
 #import "JSQMessagesKeyboardController.h"
 
 /**
@@ -37,13 +36,16 @@
  *  Returns the collection view object managed by this view controller.
  *  This view controller is the collection view's data source and delegate.
  */
-@property (weak, nonatomic, readonly) JSQMessagesCollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet JSQMessagesCollectionView *collectionView;
 
 /**
  *  Returns the input toolbar view object managed by this view controller.
  *  This view controller is the toolbar's delegate.
  */
-@property (weak, nonatomic, readonly) JSQMessagesInputToolbar *inputToolbar;
+@property (weak, nonatomic) UIView *inputToolbar;
+
+@property (weak, nonatomic) NSLayoutConstraint *toolbarHeightConstraint;
+@property (weak, nonatomic) NSLayoutConstraint *toolbarBottomLayoutGuide;
 
 /**
  *  Returns the keyboard controller object used to manage the software keyboard.
