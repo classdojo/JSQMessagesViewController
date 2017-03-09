@@ -42,7 +42,6 @@
  */
 @property (weak, nonatomic) UIView *inputToolbar;
 
-@property (weak, nonatomic) NSLayoutConstraint *toolbarHeightConstraint;
 @property (weak, nonatomic) NSLayoutConstraint *toolbarBottomLayoutGuide;
 
 /**

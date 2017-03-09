@@ -163,8 +163,6 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
     self.jsq_isObserving = NO;
 
-    self.toolbarHeightConstraint.constant = 30.0f;
-
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
 
@@ -248,7 +246,6 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     NSParameterAssert(self.senderDisplayName != nil);
 
     [super viewWillAppear:animated];
-    self.toolbarHeightConstraint.constant = 30.0f;
     [self.view layoutIfNeeded];
     [self.collectionView.collectionViewLayout invalidateLayout];
 
