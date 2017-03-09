@@ -118,7 +118,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
 
 
-@interface JSQMessagesViewController () <JSQMessagesKeyboardControllerDelegate>
+@interface JSQMessagesViewController ()
 
 @property (weak, nonatomic) UIView *snapshotView;
 
