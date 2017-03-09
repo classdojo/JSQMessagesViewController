@@ -34,7 +34,7 @@
  *  Returns the collection view object managed by this view controller.
  *  This view controller is the collection view's data source and delegate.
  */
-@property (weak, nonatomic) JSQMessagesCollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet JSQMessagesCollectionView *collectionView;
 
 /**
  *  Returns the input toolbar view object managed by this view controller.

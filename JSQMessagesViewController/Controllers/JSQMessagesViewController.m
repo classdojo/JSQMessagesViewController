@@ -159,7 +159,6 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
 - (void)jsq_configureMessagesViewController
 {
-    
     self.view.backgroundColor = [UIColor whiteColor];
 
     self.jsq_isObserving = NO;
