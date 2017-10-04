@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
 	s.frameworks = 'QuartzCore', 'CoreGraphics', 'CoreLocation', 'MapKit', 'AVFoundation'
 	s.requires_arc = true
 
-	s.dependency 'JSQSystemSoundPlayer', '~> 4.4.0'
+	s.dependency 'JSQSystemSoundPlayer', '~> 4.4'
 end
